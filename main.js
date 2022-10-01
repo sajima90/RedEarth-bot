@@ -10,7 +10,7 @@ const client = new Client({
     (x) => (client[x] = new Collection())
 );
 
-["CommandUtil", "EventUtil"].forEach(handler => { require(`./utils/handlers/${handler}`)(client) });
+["CommandUtil", "EventUtil"].forEach(handler => { require(`./utils/handlers/${handler}`)(client)});
 
 
 

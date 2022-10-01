@@ -16,8 +16,8 @@ module.exports = {
         });
 
         const embed = new MessageEmbed()
-            .setTitle("Pong! 🏓")
-            .setThumbnail(client.user.displayAvatarURL())
+            .setTitle("Pong! 🏓 ")
+            .setThumbnail(client.user.displayAvatarURL({ dynamic: true, size: 1024 }))
             .addFields(
                 {
                     name: "Latence API",
@@ -36,6 +36,7 @@ module.exports = {
                     inline: false
                 }
             )
+            .setColor("#f00020")
             .setTimestamp()
             .setFooter({
                 text: message.author.username,
@@ -54,7 +55,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setTitle("Pong! 🏓")
-            .setThumbnail(client.user.displayAvatarURL())
+            .setThumbnail(client.user.displayAvatarURL({ dynamic: true, size: 1024 }))
             .addFields(
                 {
                     name: "Latence API",
@@ -73,6 +74,7 @@ module.exports = {
                     inline: false
                 }
             )
+            .setColor("#f00020")
             .setTimestamp()
             .setFooter({
                 text: interaction.user.username,
